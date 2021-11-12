@@ -1,0 +1,73 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ubuntu', sans-serif;
+}
+body{display: flex;
+    justify-content: center;
+   align-items: center;
+   min-height: 20vh;
+    background: #333;
+}
+.navigation{
+    position: relative;
+    height: 70px;
+    width: 350px;
+}
+.navigation ul{
+    display: flex;
+    
+}
+.navigation ul li{
+    list-style: none;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    color:#59d9bd ;
+}
+.navigation ul li a:hover{
+    color:red;
+}
+.navigation ul li a .icon{
+    position: relative;
+    line-height: 75px;
+    transition: 0.5s;
+    font-size: 30px;
+}
+.navigation ul li .active a .icon{
+    font-size: 20px;
+    transform: translate(-6px);
+
+}
+.navigation ul li a .text{
+    top: 70%;
+    position: absolute;
+    font-size: 12px;
+    color: #59d9bd;
+    font-weight: 400;
+    transition: 0.25%;
+    text-transform: uppercase;
+    transform: scale(0);
+}
+.navigation ul li:hover a .text{
+    transform: scale(1);
+}
+.indicator{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    /*background: red;*/
+    border-radius: 10px;
+    transition: 0.5s;
+}
